@@ -1,3 +1,62 @@
 body{
-    background-color: red;
+    background-color: rgb(238, 232, 184);
+}
+
+h1{
+    text-align:center;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+  body, html {
+    margin: 0;  /* ← très important pour éviter les marges par défaut du navigateur */
+    padding: 0;
+}
+
+
+
+footer{
+    background-color: #111;
+    padding : 40px;
+    display : flex;
+    gap: 100px;
+    margin-top : 100px;
+}
+
+table, td, th {
+    border: 1px solid white;
+}
+  
+table {
+    border-collapse: collapse;
+    width : 600px;
+}
+
+td{
+    color :white;
+    text-align: center;
+    padding : 15px;
 }
