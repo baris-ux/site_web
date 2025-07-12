@@ -31,32 +31,48 @@ ul {
     background-color: #111;
   }
 
-  body, html {
-    margin: 0;  /* ← très important pour éviter les marges par défaut du navigateur */
-    padding: 0;
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%; 
 }
 
+header img {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
 
 
 footer{
-    background-color: #111;
-    padding : 40px;
-    display : flex;
-    gap: 100px;
-    margin-top : 100px;
+  background-color: #111;
+  padding : 40px;
+  display : flex;
+  gap: 100px;
+  margin-top : 100px;
 }
 
 table, td, th {
-    border: 1px solid white;
+  border: 1px solid white;
 }
-  
+
 table {
-    border-collapse: collapse;
-    width : 600px;
+  border-collapse: collapse;
+  width : 600px;
 }
 
 td{
-    color :white;
-    text-align: center;
-    padding : 15px;
+  color :white;
+  text-align: center;
+  padding : 15px;
+}
+
+iframe{
+  border-radius: 15px;
+}
+
+.couleur{
+    background-color: #af9547;
+    font-weight: bold;
 }

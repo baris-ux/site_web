@@ -1,14 +1,29 @@
 * {box-sizing:border-box}
 
-/* Slideshow container */
-.slideshow-container {
+.carousel-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px; 
+  padding: 20px;
+}
+
+.slideshow-container{
   max-width: 500px;
   position: relative;
   margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-/* Hide the images by default */
-.mySlides {
+.slideshow-container img {
+  display: block;         
+  width: 100%;            
+  height: auto;
+  border-radius: 0;       
+}
+
+.mySlides_1{
   display: none;
 }
 
@@ -28,26 +43,13 @@
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
 }
 
 /* Number text (1/3 etc) */
@@ -60,7 +62,7 @@
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.dot_1 {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -71,7 +73,7 @@
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active, .dot_1:hover {
   background-color: #717171;
 }
 
@@ -84,5 +86,11 @@
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.dots {
+  text-align: center;  
+  padding-top: 10px;    
+  width: 100%;          
 }
 
